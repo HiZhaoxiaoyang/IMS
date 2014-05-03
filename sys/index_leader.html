@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>index_admin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="01.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#ffffff" leftmargin="3" topmargin="3" marginwidth="3" marginheight="3">
+<table width="762" border="0" cellpadding="0" cellspacing="0" class="01">
+  <tr>
+   <td><img src="images/spacer.gif" width="506" height="1" border="0" alt=""></td>
+   <td><img src="images/spacer.gif" width="256" height="1" border="0" alt=""></td>
+   <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+
+  <tr>
+   <td colspan="2"><img name="sys_r1_c1" src="images/sys_r1_c1.gif" width="762" height="44" border="0" alt=""></td>
+   <td><img src="images/spacer.gif" width="1" height="44" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="sys_r2_c1" src="images/sys_r2_c1.gif" width="506" height="48" border="0" alt=""></td>
+   <td rowspan="2"><img name="sys_r2_c2" src="images/leader.jpg" width="256" height="289" border="0" alt=""></td>
+   <td><img src="images/spacer.gif" width="1" height="48" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td align="center"> <table width="98%" border="0" cellpadding="0" cellspacing="0" class="01">
+        <tr> 
+          <td>=领导=</td>
+        </tr>
+      </table>
+      <form name="questionForm" method="post" action="014leader_Frameset.html">
+        <table width="50%" border="0" cellpadding="2" cellspacing="2" class="01">
+          <tr> 
+            <td width="50%" align="center" bgcolor="#EAEAEA">用 &nbsp;户:</td>
+            <td width="50%"><input type="text" name="questiontitle"></td>
+            <td width="50%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="50%" align="center" bgcolor="#EAEAEA">域 &nbsp;名:</td>
+            <td width="50%"><select name="content">
+                <option>　</option>
+                <option value="0">www.c-link.com.cn</option>
+                <option value="0">www.inslong.com</option>
+                <option value="0">www.ibm.com</option>
+              </select></td>
+            <td width="50%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="50%" align="center" bgcolor="#EAEAEA">密 &nbsp;码:</td>
+            <td width="50%"><input type="password" name="pwd"></td>
+            <td width="50%"> <a href="javascript:submitForm()"><img src="images/go.gif" width="19" height="19" border="0"></a></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><br> <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="01">
+                <tr> 
+                  <td width="50%" align="center"><a href="#" class="01">找回密码</a></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <script language="javascript">
+<!--
+function submitForm()
+{
+	var form = document.questionForm;
+	var index = form.content;
+	var admin;
+	
+		
+	if (form.questiontitle.value.length == 0)
+	{
+		alert('请填写用户名');
+		return;
+	}
+		if (form.content.value.length == 0)
+	{
+		alert('请选择域名');
+		return;
+	}
+	    if (form.pwd.value.length == 0)
+	{
+	    alert('请填写密码');
+		return;
+	}
+	   form.submit();
+}
+//-->
+</script>
+      </form>
+      </td>
+   <td><img src="images/spacer.gif" width="1" height="241" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="sys_r4_c1" src="images/sys_r4_c1.gif" width="506" height="108" border="0" alt=""></td>
+   <td><img name="sys_r4_c2" src="images/sys_r4_c2.gif" width="256" height="108" border="0" alt=""></td>
+   <td><img src="images/spacer.gif" width="1" height="108" border="0" alt=""></td>
+  </tr>
+</table>
+<table width="762" border="0" cellpadding="0" cellspacing="0" class="03">
+  <tr>
+    <td>Copyright &copy; 1996 - 2002 C-Link. All Rights Reserved </td>
+  </tr>
+</table>
+<br>
+<br>
+</body>
+</html>

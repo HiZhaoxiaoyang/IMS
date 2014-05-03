@@ -1,0 +1,133 @@
+.01 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+.02 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	text-decoration: none;
+
+}
+a.01:hover {
+	color: #6699cc;
+	text-decoration: underline;
+}
+.03 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	color: #333333;
+	text-decoration: none;
+	font-size: 9px;
+
+}
+.04 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #0000b2;
+	text-decoration: none;
+}
+a.04:hover {
+	text-decoration: underline;
+	background-color: #DBE7F2;
+
+
+}
+.05 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #ff9933;
+	text-decoration: none;
+}
+.06 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #00A6DD;
+	height: 17px;
+	border: 1px solid #3838E4;
+	padding: 3px;
+
+
+}
+a.06:hover {
+	background-color: #FFFFFF;
+	color: #00a6dd;
+	border: 1px solid #049BCD;
+
+}
+a.05:hover {
+	text-decoration: underline overline;
+}
+.07 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #666666;
+	background-color: #FBFDFF;
+	border: 1px solid #6699cc;
+}
+.08 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #006699;
+	text-decoration: none;
+	background-color: #C1D6EA;
+	height: 18px;
+	width: 100%;
+	padding-top: 2px;
+
+
+
+
+
+
+}
+.09 {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	color: #006699;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	
+
+
+
+
+
+}
+a.08:hover {
+	color: #FFFFFF;
+	background-color: #006699;
+	height: 18px;
+	width: 100%;
+	padding-top: 2px;
+
+
+
+
+
+}
+a.09:hover {
+	color: #FFFFFF;
+	background-color: #6699cc;
+	height: 100%;
+	width: 100%;
+
+
+
+
+
+}
+a.08:active {
+	color: #FFFFFF;
+	background-color: #006699;
+	height: 18px;
+	width: 100%;
+	padding-top: 2px;
+}
+a.04:active {
+	background-color: #C6D9EC;
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>0137database</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2920.0" name=GENERATOR>
+<link href="01.css" rel="stylesheet" type="text/css">
+</HEAD>
+<BODY leftmargin="3" topmargin="3" marginwidth="3" marginheight="3">
+<TABLE width=560 border=0 cellPadding=0 cellSpacing=0 class="01">
+  <TBODY>
+    <TR vAlign=top> 
+      <TD width="560" height="72">&nbsp;&nbsp;<img src="images/banner_admin.jpg" width="548" height="84"></TD>
+    </TR>
+    <TR vAlign=top>
+      <TD height="72" align="center"> <table width="98%" border="0" cellpadding="0" cellspacing="0" class="01">
+          <tr> 
+            <td>&gt;&gt;<a href="013admin_main.html" class="01">主页面</a>>>数据库管理</td>
+          </tr>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr> 
+            <td width="3%"><img name="line_r1_c1" src="images/line_r1_c1.gif" width="12" height="11" border="0" alt=""></td>
+            <td valign="top" background="images/line_r1_c2.gif"><img name="line_r1_c2" src="images/dot-clear.gif" width="100%" height="1" border="0" alt=""></td>
+            <td width="4%"><img name="line_r1_c3" src="images/line_r1_c3.gif" width="18" height="11" border="0" alt=""></td>
+          </tr>
+          <tr> 
+            <td background="images/line_r2_c1.gif"><img name="line_r2_c1" src="images/dot-clear.gif" width="1" height="100%" border="0" alt=""></td>
+            <td width="100%" align="center"><table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#333333" class="04">
+                <tr> 
+                  <td valign="top" bgcolor="#D0DCE0">
+				   <script LANGUAGE="JavaScript" type="text/javascript">
+   <!--
+  // These scripts were originally found on cooltype.com.
+  // Modified 01/01/1999 by Tobias Ratschiller for linuxapps.com
+
+  // Modified 7th June 2000 by Brian Birtles for Mozilla 5.0
+  // compatibility for phpMyAdmin
+
+  document.onmouseover = doDocumentOnMouseOver ;
+  document.onmouseout = doDocumentOnMouseOut ;
+
+  function doDocumentOnMouseOver() {
+    var eSrc = window.event.srcElement ;
+    if (eSrc.className == "item") {
+      window.event.srcElement.className = "highlight";
+    }
+  }
+
+  function doDocumentOnMouseOut() {
+    var eSrc = window.event.srcElement ;
+    if (eSrc.className == "highlight") {
+      window.event.srcElement.className = "item";
+    }
+  }
+
+
+var bV=parseInt(navigator.appVersion);
+NS4=(document.layers) ? true : false;
+IE4=((document.all)&&(bV>=4)) ? true : false;
+DOM=(!document.layers && !document.all && bV>=4) ? true : false; // A hack to guess if the browser supports the DOM
+capable = (NS4 || IE4 || DOM) ? true : false;
+
+function expandIt(){return}
+function expandAll(){return}
+//-->
+</script>
+
+<script language="JavaScript1.2" type="text/javascript">
+<!--
+isExpanded = false;
+
+function getIndex(el) {
+  ind = null;
+  for (i=0; i<document.layers.length; i++) {
+    whichEl = document.layers[i];
+    if (whichEl.id == el) {
+      ind = i;
+      break;
+    }
+  }
+  return ind;
+}
+
+function arrange() {
+  nextY = document.layers[firstInd].pageY + document.layers[firstInd].document.height;
+  for (i=firstInd+1; i<document.layers.length; i++) {
+    whichEl = document.layers[i];
+    if (whichEl.visibility != "hide") {
+      whichEl.pageY = nextY;
+      nextY += whichEl.document.height;
+    }
+  }
+}
+
+function initIt(){
+  if (NS4) {
+    for (i=0; i<document.layers.length; i++) {
+      whichEl = document.layers[i];
+      if (whichEl.id.indexOf("Child") != -1) whichEl.visibility = "hide";
+    }
+    arrange();
+  } else if(IE4) {
+    tempColl = document.all.tags("DIV");
+    for (i=0; i<tempColl.length; i++) {
+      if (tempColl(i).className == "child") tempColl(i).style.display = "none";
+    }
+  } else if(DOM) {
+    tempColl = document.getElementsByTagName("DIV");
+    for (i=0; i<tempColl.length; i++) {
+      if (tempColl(i).className == "child") tempColl(i).style.visibility = "hidden";
+    }
+  }
+}
+
+function expandIt(el) {
+  if (!capable) return;
+  if (IE4) {
+    expandIE(el);
+  } else if(NS4) {
+    expandNS(el);
+  } else if(DOM) {
+    expandDOM(el);
+  }
+}
+
+function expandIE(el) {
+  whichEl = eval(el + "Child");
+
+        // Modified Tobias Ratschiller 01-01-99:
+        // event.srcElement obviously only works when clicking directly
+        // on the image. Changed that to use the images's ID instead (so
+        // you've to provide a valid ID!).
+
+  //whichIm = event.srcElement;
+        whichIm = eval(el+"Img");
+
+  if (whichEl.style.display == "none") {
+    whichEl.style.display = "block";
+    whichIm.src = "minus.gif";
+  }
+  else {
+    whichEl.style.display = "none";
+    whichIm.src = "plus.gif";
+  }
+    window.event.cancelBubble = true ;
+}
+
+function expandNS(el) {
+  whichEl = eval("document." + el + "Child");
+  whichIm = eval("document." + el + "Parent.document.images['imEx']");
+  if (whichEl.visibility == "hide") {
+    whichEl.visibility = "show";
+    whichIm.src = "minus.gif";
+  }
+  else {
+    whichEl.visibility = "hide";
+    whichIm.src = "plus.gif";
+  }
+  arrange();
+}
+
+function expandDOM(el) {
+
+  whichEl = document.getElementById(el + "Child");
+    whichIm = document.getElementById(el + "Img");
+
+  if (whichEl.style.visibility != "visible") {
+    whichEl.style.visibility = "visible";
+    whichIm.src = "minus.gif";
+  } else {
+    whichEl.style.visibility = "hidden";
+    whichIm.src = "plus.gif";
+  }
+
+}
+
+function showAll() {
+  for (i=firstInd; i<document.layers.length; i++) {
+    whichEl = document.layers[i];
+    whichEl.visibility = "show";
+  }
+}
+
+function expandAll(isBot) {
+  // Brian Birtles 7-Jun-00 : This fn might be unnecessary (for phpMyAdmin).
+  // My changes are certainly untested.
+  newSrc = (isExpanded) ? "plus.gif" : "minus.gif";
+
+  if (NS4) {
+        // TR-02-01-99: Don't need that
+        // document.images["imEx"].src = newSrc;
+    for (i=firstInd; i<document.layers.length; i++) {
+      whichEl = document.layers[i];
+      if (whichEl.id.indexOf("Parent") != -1) {
+        whichEl.document.images["imEx"].src = newSrc;
+      }
+      if (whichEl.id.indexOf("Child") != -1) {
+        whichEl.visibility = (isExpanded) ? "hide" : "show";
+      }
+    }
+
+    arrange();
+   if (isBot && isExpanded) scrollTo(0,document.layers[firstInd].pageY);
+  } else if(IE4) {
+    divColl = document.all.tags("DIV");
+    for (i=0; i<divColl.length; i++) {
+      if (divColl(i).className == "child") {
+        divColl(i).style.display = (isExpanded) ? "none" : "block";
+      }
+    }
+    imColl = document.images.item("imEx");
+    for (i=0; i<imColl.length; i++) {
+      imColl(i).src = newSrc;
+    }
+  } else if(DOM) {
+    divColl = document.getElementsByTagName("DIV");
+    for (i=0; i<divColl.length; i++) {
+      if (divColl(i).className == "child") {
+        divColl(i).style.visibility = (isExpanded) ? "hidden" : "visible";
+      }
+    }
+    imColl = document.getElementsByName("imEx");
+    for (i=0; i<imColl.length; i++) {
+      imColl(i).src = newSrc;
+    }
+  }
+
+  isExpanded = !isExpanded;
+}
+
+with (document) {
+  if(DOM) {
+    // Brian Birtles : This is not the ideal method of doing this
+    // but under the 7th June '00 Mozilla build (and many before
+    // it) Mozilla did not treat text between <style> tags as
+    // style information unless it was written with the one call
+    // to write().
+    var lstyle = "<style type='text/css'>";
+    lstyle += ".child {font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; text-decoration:none; visibility:hidden}";
+    lstyle += ".parent {font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; text-decoration:none;}";
+    lstyle += ".item { color: darkblue; text-decoration:none; font-size: 8pt;}";
+    lstyle += ".highlight { color: red; font-size: 8pt;}";
+    lstyle += ".heada { font: 12px/13px; Times}";
+    lstyle += "DIV { color:black; }";
+    lstyle += "</style>";
+    write(lstyle);
+  } else {
+    write("<style type='text/css'>");
+    if (NS4) {
+            write(".parent {font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; text-decoration:none; position:absolute; visibility:hidden; color: black;}");
+            write(".child {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt;color: #000000; position:absolute; visibility:hidden}");
+            write(".item { color: darkblue; text-decoration:none;}");
+            write(".regular {font-family: Arial,Helvetica,sans-serif; position:absolute; visibility:hidden}");
+            write("DIV { color:black; }");
+    } else if(IE4) {
+            write(".child {font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; text-decoration:none; display:none}");
+            write(".parent {font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; text-decoration:none;}");
+            write(".item { color: darkblue; text-decoration:none; font-size: 8pt;}");
+            write(".highlight { color: red; font-size: 8pt;}");
+            write(".heada { font: 12px/13px; Times}");
+            write("DIV { color:black; }");
+    }
+    write("</style>");
+  }
+}
+
+onload = initIt;
+
+//-->
+</script>
+<base target="phpmain">
+<style type="text/css">
+//<!--
+body {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+//-->
+</style>
+ <DIV ID="el1Parent" CLASS="parent">
+      <A class="item" HREF="main.php?server=1">
+      <FONT color="black" class="heada">
+      Home   </FONT></A>
+      </DIV>
+      <div ID="el2Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_addr" onClick="expandIt('el2'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el2Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_addr" onClick="expandIt('el2');">
+      <font color="black" class="heada">
+    db_addr      </font></a>
+      </div>
+      <div ID="el2Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_addr&table=tb_addr&sql_query=SELECT%2B*%2BFROM%2Btb_addr&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_addr"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_addr&table=tb_addr">tb_addr</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_addr&table=tb_addr_share&sql_query=SELECT%2B*%2BFROM%2Btb_addr_share&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_addr_share"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_addr&table=tb_addr_share">tb_addr_share</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_addr&table=tb_admin&sql_query=SELECT%2B*%2BFROM%2Btb_admin&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_admin"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_addr&table=tb_admin">tb_admin</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_addr&table=tb_grp&sql_query=SELECT%2B*%2BFROM%2Btb_grp&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_grp"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_addr&table=tb_grp">tb_grp</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_addr&table=tb_grp_share&sql_query=SELECT%2B*%2BFROM%2Btb_grp_share&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_grp_share"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_addr&table=tb_grp_share">tb_grp_share</a></nobr><br>
+        </div>
+      <div ID="el3Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_bookmark" onClick="expandIt('el3'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el3Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_bookmark" onClick="expandIt('el3');">
+      <font color="black" class="heada">
+    db_bookmark      </font></a>
+      </div>
+      <div ID="el3Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_bookmark&table=tb_folders&sql_query=SELECT%2B*%2BFROM%2Btb_folders&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_folders"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_bookmark&table=tb_folders">tb_folders</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_bookmark&table=tb_item&sql_query=SELECT%2B*%2BFROM%2Btb_item&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_item"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_bookmark&table=tb_item">tb_item</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_bookmark&table=tb_user&sql_query=SELECT%2B*%2BFROM%2Btb_user&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_user"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_bookmark&table=tb_user">tb_user</a></nobr><br>
+        </div>
+      <div ID="el4Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_down" onClick="expandIt('el4'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el4Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_down" onClick="expandIt('el4');">
+      <font color="black" class="heada">
+    db_down      </font></a>
+      </div>
+      <div ID="el4Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_down&table=tb_down&sql_query=SELECT%2B*%2BFROM%2Btb_down&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_down"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_down&table=tb_down">tb_down</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_down&table=tb_folder&sql_query=SELECT%2B*%2BFROM%2Btb_folder&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_folder"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_down&table=tb_folder">tb_folder</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_down&table=tb_user&sql_query=SELECT%2B*%2BFROM%2Btb_user&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_user"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_down&table=tb_user">tb_user</a></nobr><br>
+        </div>
+      <div ID="el5Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_filemanage" onClick="expandIt('el5'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el5Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_filemanage" onClick="expandIt('el5');">
+      <font color="black" class="heada">
+    db_filemanage      </font></a>
+      </div>
+      <div ID="el5Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_filemanage&table=tb_file&sql_query=SELECT%2B*%2BFROM%2Btb_file&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_file"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_filemanage&table=tb_file">tb_file</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_filemanage&table=tb_folders&sql_query=SELECT%2B*%2BFROM%2Btb_folders&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_folders"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_filemanage&table=tb_folders">tb_folders</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_filemanage&table=tb_user&sql_query=SELECT%2B*%2BFROM%2Btb_user&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_user"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_filemanage&table=tb_user">tb_user</a></nobr><br>
+        </div>
+      <div ID="el6Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_mlist" onClick="expandIt('el6'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el6Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_mlist" onClick="expandIt('el6');">
+      <font color="black" class="heada">
+    db_mlist      </font></a>
+      </div>
+      <div ID="el6Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_mlist&table=tb_address&sql_query=SELECT%2B*%2BFROM%2Btb_address&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_address"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_mlist&table=tb_address">tb_address</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_mlist&table=tb_duty&sql_query=SELECT%2B*%2BFROM%2Btb_duty&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_duty"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_mlist&table=tb_duty">tb_duty</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_mlist&table=tb_folder&sql_query=SELECT%2B*%2BFROM%2Btb_folder&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_folder"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_mlist&table=tb_folder">tb_folder</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_mlist&table=tb_list&sql_query=SELECT%2B*%2BFROM%2Btb_list&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_list"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_mlist&table=tb_list">tb_list</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_mlist&table=tb_log&sql_query=SELECT%2B*%2BFROM%2Btb_log&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_log"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_mlist&table=tb_log">tb_log</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_mlist&table=tb_mnguser&sql_query=SELECT%2B*%2BFROM%2Btb_mnguser&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_mnguser"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_mlist&table=tb_mnguser">tb_mnguser</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_mlist&table=tb_site&sql_query=SELECT%2B*%2BFROM%2Btb_site&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_site"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_mlist&table=tb_site">tb_site</a></nobr><br>
+        </div>
+      <div ID="el7Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_schedule" onClick="expandIt('el7'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el7Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_schedule" onClick="expandIt('el7');">
+      <font color="black" class="heada">
+    db_schedule      </font></a>
+      </div>
+      <div ID="el7Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_schedule&table=tb_schedule&sql_query=SELECT%2B*%2BFROM%2Btb_schedule&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_schedule"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_schedule&table=tb_schedule">tb_schedule</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_schedule&table=tb_user&sql_query=SELECT%2B*%2BFROM%2Btb_user&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_user"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_schedule&table=tb_user">tb_user</a></nobr><br>
+        </div>
+      <div ID="el8Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_sfs" onClick="expandIt('el8'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el8Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_sfs" onClick="expandIt('el8');">
+      <font color="black" class="heada">
+    db_sfs      </font></a>
+      </div>
+      <div ID="el8Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_sfs&table=tb_bookmark&sql_query=SELECT%2B*%2BFROM%2Btb_bookmark&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_bookmark"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_sfs&table=tb_bookmark">tb_bookmark</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_sfs&table=tb_favorites&sql_query=SELECT%2B*%2BFROM%2Btb_favorites&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_favorites"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_sfs&table=tb_favorites">tb_favorites</a></nobr><br>
+        </div>
+      <div ID="el9Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_testbbs" onClick="expandIt('el9'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el9Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_testbbs" onClick="expandIt('el9');">
+      <font color="black" class="heada">
+    db_testbbs      </font></a>
+      </div>
+      <div ID="el9Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_Emoticons&sql_query=SELECT%2B*%2BFROM%2Bvt_Emoticons&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_Emoticons"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_Emoticons">vt_Emoticons</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_UserLevel&sql_query=SELECT%2B*%2BFROM%2Bvt_UserLevel&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_UserLevel"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_UserLevel">vt_UserLevel</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_activelist&sql_query=SELECT%2B*%2BFROM%2Bvt_activelist&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_activelist"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_activelist">vt_activelist</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_announcements&sql_query=SELECT%2B*%2BFROM%2Bvt_announcements&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_announcements"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_announcements">vt_announcements</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_bSettings&sql_query=SELECT%2B*%2BFROM%2Bvt_bSettings&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_bSettings"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_bSettings">vt_bSettings</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_banlist&sql_query=SELECT%2B*%2BFROM%2Bvt_banlist&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_banlist"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_banlist">vt_banlist</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_boards&sql_query=SELECT%2B*%2BFROM%2Bvt_boards&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_boards"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_boards">vt_boards</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_categories&sql_query=SELECT%2B*%2BFROM%2Bvt_categories&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_categories"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_categories">vt_categories</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_messages&sql_query=SELECT%2B*%2BFROM%2Bvt_messages&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_messages"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_messages">vt_messages</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_posticons&sql_query=SELECT%2B*%2BFROM%2Bvt_posticons&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_posticons"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_posticons">vt_posticons</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_ubbc&sql_query=SELECT%2B*%2BFROM%2Bvt_ubbc&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_ubbc"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_ubbc">vt_ubbc</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_users&sql_query=SELECT%2B*%2BFROM%2Bvt_users&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_users"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_users">vt_users</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_testbbs&table=vt_words&sql_query=SELECT%2B*%2BFROM%2Bvt_words&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: vt_words"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_testbbs&table=vt_words">vt_words</a></nobr><br>
+        </div>
+      <div ID="el10Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=db_wdpost" onClick="expandIt('el10'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el10Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=db_wdpost" onClick="expandIt('el10');">
+      <font color="black" class="heada">
+    db_wdpost      </font></a>
+      </div>
+      <div ID="el10Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_asyuser&sql_query=SELECT%2B*%2BFROM%2Btb_asyuser&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_asyuser"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_asyuser">tb_asyuser</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_ep_rate&sql_query=SELECT%2B*%2BFROM%2Btb_ep_rate&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_ep_rate"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_ep_rate">tb_ep_rate</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_eppost&sql_query=SELECT%2B*%2BFROM%2Btb_eppost&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_eppost"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_eppost">tb_eppost</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_files&sql_query=SELECT%2B*%2BFROM%2Btb_files&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_files"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_files">tb_files</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_files_nopermit&sql_query=SELECT%2B*%2BFROM%2Btb_files_nopermit&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_files_nopermit"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_files_nopermit">tb_files_nopermit</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_files_permit&sql_query=SELECT%2B*%2BFROM%2Btb_files_permit&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_files_permit"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_files_permit">tb_files_permit</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_files_psnpermit&sql_query=SELECT%2B*%2BFROM%2Btb_files_psnpermit&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_files_psnpermit"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_files_psnpermit">tb_files_psnpermit</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_leader&sql_query=SELECT%2B*%2BFROM%2Btb_leader&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_leader"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_leader">tb_leader</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_mailall&sql_query=SELECT%2B*%2BFROM%2Btb_mailall&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_mailall"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_mailall">tb_mailall</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_maillog&sql_query=SELECT%2B*%2BFROM%2Btb_maillog&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_maillog"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_maillog">tb_maillog</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_mailtrack&sql_query=SELECT%2B*%2BFROM%2Btb_mailtrack&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_mailtrack"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_mailtrack">tb_mailtrack</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_needreg&sql_query=SELECT%2B*%2BFROM%2Btb_needreg&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_needreg"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_needreg">tb_needreg</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_question&sql_query=SELECT%2B*%2BFROM%2Btb_question&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_question"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_question">tb_question</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_tcollector&sql_query=SELECT%2B*%2BFROM%2Btb_tcollector&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_tcollector"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_tcollector">tb_tcollector</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_uindex&sql_query=SELECT%2B*%2BFROM%2Btb_uindex&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_uindex"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_uindex">tb_uindex</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_uinfo&sql_query=SELECT%2B*%2BFROM%2Btb_uinfo&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_uinfo"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_uinfo">tb_uinfo</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_umbox&sql_query=SELECT%2B*%2BFROM%2Btb_umbox&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_umbox"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_umbox">tb_umbox</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_urate&sql_query=SELECT%2B*%2BFROM%2Btb_urate&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_urate"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_urate">tb_urate</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_urate_bytime&sql_query=SELECT%2B*%2BFROM%2Btb_urate_bytime&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_urate_bytime"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_urate_bytime">tb_urate_bytime</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_user_rate&sql_query=SELECT%2B*%2BFROM%2Btb_user_rate&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_user_rate"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_user_rate">tb_user_rate</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_usql&sql_query=SELECT%2B*%2BFROM%2Btb_usql&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_usql"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_usql">tb_usql</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_vdomain&sql_query=SELECT%2B*%2BFROM%2Btb_vdomain&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_vdomain"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_vdomain">tb_vdomain</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_vugrp&sql_query=SELECT%2B*%2BFROM%2Btb_vugrp&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_vugrp"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_vugrp">tb_vugrp</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_vugrp_mbr&sql_query=SELECT%2B*%2BFROM%2Btb_vugrp_mbr&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_vugrp_mbr"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_vugrp_mbr">tb_vugrp_mbr</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=db_wdpost&table=tb_wdog&sql_query=SELECT%2B*%2BFROM%2Btb_wdog&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tb_wdog"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=db_wdpost&table=tb_wdog">tb_wdog</a></nobr><br>
+        </div>
+      <div ID="el11Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=laoer" onClick="expandIt('el11'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el11Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=laoer" onClick="expandIt('el11');">
+      <font color="black" class="heada">
+    laoer      </font></a>
+      </div>
+      <div ID="el11Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=adminuser&sql_query=SELECT%2B*%2BFROM%2Badminuser&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: adminuser"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=adminuser">adminuser</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=board&sql_query=SELECT%2B*%2BFROM%2Bboard&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: board"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=board">board</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=boards&sql_query=SELECT%2B*%2BFROM%2Bboards&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: boards"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=boards">boards</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=dy&sql_query=SELECT%2B*%2BFROM%2Bdy&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: dy"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=dy">dy</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=forum&sql_query=SELECT%2B*%2BFROM%2Bforum&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: forum"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=forum">forum</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=friend&sql_query=SELECT%2B*%2BFROM%2Bfriend&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: friend"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=friend">friend</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=grzc&sql_query=SELECT%2B*%2BFROM%2Bgrzc&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: grzc"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=grzc">grzc</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=guestbook&sql_query=SELECT%2B*%2BFROM%2Bguestbook&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: guestbook"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=guestbook">guestbook</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=mydata&sql_query=SELECT%2B*%2BFROM%2Bmydata&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: mydata"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=mydata">mydata</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=photo&sql_query=SELECT%2B*%2BFROM%2Bphoto&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: photo"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=photo">photo</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=shuqian&sql_query=SELECT%2B*%2BFROM%2Bshuqian&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: shuqian"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=shuqian">shuqian</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=sign&sql_query=SELECT%2B*%2BFROM%2Bsign&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: sign"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=sign">sign</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=unpost&sql_query=SELECT%2B*%2BFROM%2Bunpost&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: unpost"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=unpost">unpost</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=user&sql_query=SELECT%2B*%2BFROM%2Buser&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: user"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=user">user</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=laoer&table=userdata&sql_query=SELECT%2B*%2BFROM%2Buserdata&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: userdata"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=laoer&table=userdata">userdata</a></nobr><br>
+        </div>
+      <div ID="el12Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=mysql" onClick="expandIt('el12'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el12Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=mysql" onClick="expandIt('el12');">
+      <font color="black" class="heada">
+    mysql      </font></a>
+      </div>
+      <div ID="el12Child" CLASS="child">
+                <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=mysql&table=columns_priv&sql_query=SELECT%2B*%2BFROM%2Bcolumns_priv&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: columns_priv"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=mysql&table=columns_priv">columns_priv</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=mysql&table=db&sql_query=SELECT%2B*%2BFROM%2Bdb&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: db"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=mysql&table=db">db</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=mysql&table=func&sql_query=SELECT%2B*%2BFROM%2Bfunc&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: func"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=mysql&table=func">func</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=mysql&table=host&sql_query=SELECT%2B*%2BFROM%2Bhost&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: host"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=mysql&table=host">host</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=mysql&table=tables_priv&sql_query=SELECT%2B*%2BFROM%2Btables_priv&pos=0&goto=tbl_properties.php"><img src="browse.gif" border="0" alt="Browse: tables_priv"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=mysql&table=tables_priv">tables_priv</a></nobr><br>
+                    <nobr>&nbsp;&nbsp;&nbsp;&nbsp;<a target="phpmain" href="sql.php?server=1&db=mysql&table=user&sql_query=SELECT%2B*%2BFROM%2Buser&pos=0&goto=tbl_properties.php"><img src="browse.gif" alt="Browse: user" width="8" height="8" border="0"></a>&nbsp;<a class="item" target="phpmain" HREF="tbl_properties.php?server=1&db=mysql&table=user">user</a></nobr><br>
+        </div>
+      <div ID="el13Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=test" onClick="expandIt('el13'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el13Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=test" onClick="expandIt('el13');">
+      <font color="black" class="heada">
+    test      </font></a>
+      </div>
+      <div ID="el13Child" CLASS="child">
+    </div>
+      <div ID="el14Parent" CLASS="parent">
+      <a class="item" HREF="db_details.php?server=1&db=zhao" onClick="expandIt('el14'); return false;">
+      <img NAME="imEx" SRC="plus.gif" BORDER="0" ALT="+" width="9" height="9" ID="el14Img"></a>
+      <a class="item" HREF="db_details.php?server=1&db=zhao" onClick="expandIt('el14');">
+      <font color="black" class="heada">
+    zhao      </font></a>
+      </div>
+      <div ID="el14Child" CLASS="child">
+    </div>
+    <script LANGUAGE="JavaScript1.2">
+    <!--
+    if (NS4) {
+      firstEl = "el1Parent";
+      firstInd = getIndex(firstEl);
+      showAll();
+      arrange();
+    }
+    //-->
+    </script>
+
+				  </td>
+                  <td valign="top" bgcolor="#f5f5f5"><h1><font color="#000000" size="5">Welcome to phpMyAdmin 
+                      2.1.0</font></h1>
+                    <b>MySQL 3.23.44 running on localhost</b><br> <div align="left"> 
+                      <ul>
+                        <li> 
+                          <form method="post" action="db_create.php">
+                            Create new database [<a href="http://www.mysql.com/documentation/mysql/bychapter//manual_Reference.html#Create_database">Documentation</a>]<br>
+                            <br>
+                            <input type="Hidden" name="server" value="1">
+                            <input type="hidden" name="reload" value="true">
+                            <input name="db" type="text" class="07">
+                            <input name="submit" type="submit" class="03" value="Create">
+                          </form>
+                        <li><a href="sql.php?server=1&db=mysql&sql_query=SHOW+STATUS"> 
+                          Show MySQL runtime information</a> [<a href="http://www.mysql.com/documentation/mysql/bychapter//manual_Reference.html#Show">Documentation</a>] 
+                        <li><a href="sql.php?server=1&db=mysql&sql_query=SHOW+VARIABLES"> 
+                          Show MySQL system variables</a> [<a href="http://www.mysql.com/documentation/mysql/bychapter//manual_Performance.html#Performance">Documentation</a>] 
+                        <li><a href="sql.php?server=1&db=mysql&sql_query=SHOW+PROCESSLIST"> 
+                          Show processes</a> [<a href="http://www.mysql.com/documentation/mysql/bychapter//manual_Reference.html#Show">Documentation</a>] 
+                        <li> <a href="main.php?server=1&mode=reload">Reload MySQL</a> 
+                          [<a href="http://www.mysql.com/documentation/mysql/bychapter//manual_Reference.html#Flush">Documentation</a>] 
+                        <li> <a href="http://phpwizard.net/projects/phpMyAdmin/" target="_top">phpMyAdmin-Homepage</a> 
+                        <li> <a href="Documentation.html" target="_top">phpMyAdmin 
+                          Documentation</a> 
+                      </ul>
+                    </div></td>
+                </tr>
+              </table></td>
+            <td background="images/line_r2_c3.gif"><img name="line_r2_c3" src="images/dot-clear.gif" width="1" height="100%" border="0" alt=""></td>
+          </tr>
+          <tr> 
+            <td><img name="line_r3_c1" src="images/line_r3_c1.gif" width="12" height="21" border="0" alt=""></td>
+            <td background="images/line_r3_c2.gif"><a href="images/line_r3_c2.gif"><img name="line_r3_c2" src="images/dot-clear.gif" width="100%" height="1" border="0" alt=""></a></td>
+            <td><img name="line_r3_c3" src="images/line_r3_c3.gif" width="18" height="21" border="0" alt=""></td>
+          </tr>
+        </table> </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>
