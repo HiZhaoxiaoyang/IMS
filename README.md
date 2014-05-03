@@ -4,7 +4,7 @@ IMS
 Information Management System
 
 
-create@2002.
+create@2002. 一周内前端完成192个文件（js、css、html）的所有交互及UI设计、代码编写和前后端整合；
 
 Tools: Dreamweaver 5.0 , Photoshop5.0 , EditPlus
 
