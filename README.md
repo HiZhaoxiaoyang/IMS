@@ -12,11 +12,11 @@ Browser: IE5, Netscape 1.0
 
 Front-end: html table, js, css
 
-Back-end: php ,servelet
+Back-end: php , apache , mysql
 
 Highly recommand view this prototype under ie8-.
 
-建议在ie8以下浏览器浏览此网站原型。
+建议在ie8以下浏览器浏览
 
 开发周期：
 
